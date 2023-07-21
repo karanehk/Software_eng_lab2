@@ -14,13 +14,19 @@
 
 در این تست، یک شئ مستطیل داریم که با متد `computeArea` باید بتوان مساحتش را به دست آورد. ورودی `delta` در `assertEquals`، برای این است که JUnit در رابطه با می‌دهیم.
 
-بعد از build گرفتن، به خطای زیر می‌رسیم که به خاطر نداشتن کلاس مستطیل است.  <img title="" src="images/rec%20CA%202.png" alt="alt text" data-align="center" width="597">
+بعد از build گرفتن، به خطای زیر می‌رسیم که به خاطر نداشتن کلاس مستطیل است. 
+
+<img title="" src="images/rec%20CA%202.png" alt="alt text" data-align="center" width="597">
 
 در این گام باید برویم و با اضافه کردن کد در برنامه، اشکالات کامپایلری تست‌ها را برطرف کنیم. از آن‌جا که می‌خواهیم اصول شئ‌گرایی SOLID را رعایت کنیم، از ابتدا، یک interface به عنوان shape می‌سازیم. با این کار اصول OCP و LSP را رعایت کرده‌ایم و در تغییرات آینده نیز به مشکل نخواهیم خورد. زیرا اگر بخواهیم شکل جدید اضافه کنیم، کافیست shape را implement کند و این‌گونه شکل‌های قبلی نیاز نیست تغییر کنند و OCP حفظ می‌‌شود و همچنین شکلی، فرزند شکل دیگری نخواهد شد و LSP حفظ می‌شود. فایل‌های Shape.java و Rectangle.java که اضافه می‌کنیم، به ترتیب به شکل زیر خواهند بود:
 
-<img title="" src="images/rec%20CA%203-1.png" alt="alt text" data-align="center" width="582"><img title="" src="images/rec%20CA%203-2.png" alt="alt text" data-align="center" width="592">
+<img title="" src="images/rec%20CA%203-1.png" alt="alt text" data-align="center" width="582">
 
-حال باید تست‌ را اجرا کنیم و ببینیم چه نتیجه‌ای می‌دهد: <img title="" src="images/rec%20CA%204.png" alt="loading-ag-532" data-align="center" width="596">
+<img title="" src="images/rec%20CA%203-2.png" alt="alt text" data-align="center" width="592">
+
+حال باید تست‌ را اجرا کنیم و ببینیم چه نتیجه‌ای می‌دهد: 
+
+<img title="" src="images/rec%20CA%204.png" alt="loading-ag-532" data-align="center" width="596">
 
 همان‌طور که می‌بینید تست‌ شکست خورد. حال باید با تغییر کد در برنامه، اشکالات زمان اجرای تست‌ را رفع کنیم. متد computeArea را به شکل زیر تغییر می‌دهیم:
 

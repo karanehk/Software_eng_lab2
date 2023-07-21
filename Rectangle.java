@@ -15,6 +15,14 @@ public class Rectangle implements Shape {
         return width;
     }
 
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
     @Override
     public double computeArea() {
         return height * width;

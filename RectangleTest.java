@@ -43,5 +43,5 @@ public class RectangleTest {
         double actualWidth = rectangle.getWidth();
         assertEquals(expectedWidth, actualWidth, 0.001);
     }
-    
+
 }

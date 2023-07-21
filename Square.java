@@ -15,6 +15,6 @@ public class Square implements Shape {
 
     @Override
     public double computeArea() {
-        return 0;
+        return side * side;
     }
 }

@@ -9,7 +9,6 @@ public class Rectangle implements Shape {
 
     @Override
     public double computeArea() {
-        double area = 0;
-        return area;
+        return height * width;
     }
 }

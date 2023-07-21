@@ -7,6 +7,14 @@ public class Rectangle implements Shape {
         this.width = width;
     }
 
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
     @Override
     public double computeArea() {
         return height * width;

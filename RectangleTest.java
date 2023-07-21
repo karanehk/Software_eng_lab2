@@ -27,4 +27,21 @@ public class RectangleTest {
         assertEquals(expectedHeight, actualHeight, 0.001);
     }
 
+    @Test
+    public void testSetHeight() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        rectangle.setHeight(4);
+        double expectedHeight = 4;
+        double actualHeight = rectangle.getHeight();
+        assertEquals(expectedHeight, actualHeight, 0.001);    }
+
+    @Test
+    public void testSetWidth() {
+        Rectangle rectangle = new Rectangle(4, 2);
+        rectangle.setWidth(3);
+        double expectedWidth = 3;
+        double actualWidth = rectangle.getWidth();
+        assertEquals(expectedWidth, actualWidth, 0.001);
+    }
+    
 }
